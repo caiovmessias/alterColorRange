@@ -1,0 +1,77 @@
+* {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+#main {
+  width: 470px;
+  margin: 10px auto;
+  padding: 20px;
+  background: #e7e4e4;
+  border-radius: 10px;
+  text-align: center;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+p {
+  text-align: justify;
+  font-size: 18px;
+}
+
+form {
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+#square {
+  width: 90px;
+  height: 90px;
+  margin-top: 15px;
+  margin-left: 50px;
+  border-radius: 5px;
+  border: 1px solid #b4b4b4;
+  float: left;
+}
+
+#clear {
+  clear: both;
+  display: block;
+}
+
+.inputItems {
+  display: block;
+}
+
+#labels {
+  float: left;
+}
+
+label {
+  display: block;
+  padding: 10px;
+}
+
+#inputsRange {
+  float: left;
+}
+
+.inputRange {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+#inputsText {
+  float: left;
+  margin-left: 10px;
+}
+
+.inputText {
+  width: 25px;
+  display: block;
+  margin-top: 8px;
+  margin-bottom: 20px;
+}

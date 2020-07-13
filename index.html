@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Trabalho Prático - Módulo 1</title>
+  </head>
+  <body>
+    <div id="main">
+      <h1>Trabalho Prático - Módulo 1</h1>
+      <p>
+        Informe os niveís em RGB (red, green, blue) para mudar a cor do quadrado
+        a seguir:
+      </p>
+      <form>
+        <div id="labels">
+          <label for="rangeRed">(R) Vermelho</label>
+          <label for="rangeGreen">(G) Verde</label>
+          <label for="rangeBlue">(B) Azul</label>
+        </div>
+
+        <div id="inputsRange">
+          <!-- prettier-ignore -->
+          <input class="inputRange" type="range" name="rangeRed" id="rangeRed" min="0" max="255" />
+          <!-- prettier-ignore -->
+          <input class="inputRange" type="range" name="rangeGreen" id="rangeGreen" min="0" max="255" />
+          <!-- prettier-ignore -->
+          <input class="inputRange" type="range" name="rangeBlue" id="rangeBlue" min="0" max="255"/>
+        </div>
+
+        <div id="inputsText">
+          <input class="inputText" type="text" id="textRed" disabled />
+          <input class="inputText" type="text" id="textGreen" disabled />
+          <input class="inputText" type="text" id="textBlue" disabled />
+        </div>
+      </form>
+      <div id="square"></div>
+      <span id="clear"></span>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
