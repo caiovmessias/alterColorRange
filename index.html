@@ -3,6 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!--Import materialize.css-->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="css/materialize.min.css"
+      media="screen,projection"
+    />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Trabalho Prático - Módulo 1</title>
@@ -22,12 +37,18 @@
         </div>
 
         <div id="inputsRange">
-          <!-- prettier-ignore -->
-          <input class="inputRange" type="range" name="rangeRed" id="rangeRed" min="0" max="255" />
-          <!-- prettier-ignore -->
-          <input class="inputRange" type="range" name="rangeGreen" id="rangeGreen" min="0" max="255" />
-          <!-- prettier-ignore -->
-          <input class="inputRange" type="range" name="rangeBlue" id="rangeBlue" min="0" max="255"/>
+          <p class="range-field">
+            <!-- prettier-ignore -->
+            <input class="inputRange" type="range" name="rangeRed" id="rangeRed" min="0" max="255" value="0"/>
+          </p>
+          <p class="range-field">
+            <!-- prettier-ignore -->
+            <input class="inputRange" type="range" name="rangeGreen" id="rangeGreen" min="0" max="255" value="0"/>
+          </p>
+          <p class="range-field">
+            <!-- prettier-ignore -->
+            <input class="inputRange" type="range" name="rangeBlue" id="rangeBlue" min="0" max="255"value="0"/>
+          </p>
         </div>
 
         <div id="inputsText">
@@ -39,6 +60,7 @@
       <div id="square"></div>
       <span id="clear"></span>
     </div>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
     <script src="./js/script.js"></script>
   </body>
 </html>

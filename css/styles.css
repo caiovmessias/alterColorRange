@@ -1,35 +1,57 @@
-* {
-  font-family: Helvetica, Arial, sans-serif;
+h1 {
+  font-weight: bold;
+  font-size: 36px;
 }
 
 #main {
-  width: 470px;
+  width: 570px;
   margin: 10px auto;
   padding: 20px;
-  background: #e7e4e4;
+  background: #f3f7f5;
   border-radius: 10px;
   text-align: center;
 }
 
-h1 {
-  font-weight: bold;
-  font-size: 24px;
+#labels {
+  float: left;
+  margin-left: 25px !important;
+  text-align: justify;
 }
 
-p {
-  text-align: justify;
-  font-size: 18px;
+label {
+  display: block;
+  margin-top: 35px !important;
+  margin-bottom: 40px !important;
 }
 
-form {
-  text-align: justify;
-  margin-bottom: 20px;
+#inputsRange {
+  float: left;
+  margin-left: 20px;
+}
+
+.range-field {
+  /* .inputRange { */
+  display: block;
+  margin-top: 25px !important;
+}
+
+#inputsText {
+  float: left;
+  margin-left: 30px;
+}
+
+.inputText {
+  width: 35px !important;
+  display: block;
+  margin-top: 25px !important;
+  margin-bottom: 40px !important;
+  height: 20px !important;
 }
 
 #square {
-  width: 90px;
-  height: 90px;
-  margin-top: 15px;
+  width: 140px;
+  height: 140px;
+  margin-top: 30px;
   margin-left: 50px;
   border-radius: 5px;
   border: 1px solid #b4b4b4;
@@ -39,39 +61,4 @@ form {
 #clear {
   clear: both;
   display: block;
-}
-
-.inputItems {
-  display: block;
-}
-
-#labels {
-  float: left;
-}
-
-label {
-  display: block;
-  padding: 10px;
-}
-
-#inputsRange {
-  float: left;
-}
-
-.inputRange {
-  display: block;
-  margin-top: 10px;
-  margin-bottom: 25px;
-}
-
-#inputsText {
-  float: left;
-  margin-left: 10px;
-}
-
-.inputText {
-  width: 25px;
-  display: block;
-  margin-top: 8px;
-  margin-bottom: 20px;
 }

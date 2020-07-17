@@ -12,17 +12,13 @@ function start() {
   square = document.querySelector('#square');
 
   rangeRed = document.querySelector('#rangeRed');
-  rangeRed.addEventListener('change', changeRed);
+  rangeRed.addEventListener('input', changeColor);
 
   rangeGreen = document.querySelector('#rangeGreen');
-  rangeGreen.addEventListener('change', changeGreen);
+  rangeGreen.addEventListener('input', changeColor);
 
   rangeBlue = document.querySelector('#rangeBlue');
-  rangeBlue.addEventListener('change', changeBlue);
-
-  rangeRed.value = 0;
-  rangeGreen.value = 0;
-  rangeBlue.value = 0;
+  rangeBlue.addEventListener('input', changeColor);
 
   textRed = document.querySelector('#textRed');
   textRed.value = rangeRed.value;
@@ -36,17 +32,9 @@ function start() {
   square.style.backgroundColor = `rgb(${rangeRed.valueAsNumber}, ${rangeGreen.valueAsNumber}, ${rangeBlue.valueAsNumber}`;
 }
 
-function changeRed() {
+function changeColor() {
   textRed.value = rangeRed.value;
-  square.style.backgroundColor = `rgb(${rangeRed.valueAsNumber}, ${rangeGreen.valueAsNumber}, ${rangeBlue.valueAsNumber}`;
-}
-
-function changeGreen() {
   textGreen.value = rangeGreen.value;
-  square.style.backgroundColor = `rgb(${rangeRed.valueAsNumber}, ${rangeGreen.valueAsNumber}, ${rangeBlue.valueAsNumber}`;
-}
-
-function changeBlue() {
   textBlue.value = rangeBlue.value;
   square.style.backgroundColor = `rgb(${rangeRed.valueAsNumber}, ${rangeGreen.valueAsNumber}, ${rangeBlue.valueAsNumber}`;
 }
